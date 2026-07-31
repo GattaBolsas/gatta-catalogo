@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bolsa Feminina Meia Lua de Ombro e Mão — GATTA</title>
+<style>
+:root{--bg:#090909;--gold:#b08d3b;--gold2:#dec47f;--text:#f7f2e8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,sans-serif}
+header{padding:20px;text-align:center;border-bottom:1px solid #292929}.logo{font-family:Georgia,serif;letter-spacing:7px;font-size:31px;color:var(--gold2);font-weight:bold}.sub{font-size:10px;letter-spacing:3px;color:var(--gold);margin-top:5px}
+.wrap{max-width:1120px;margin:auto;padding:0 18px 45px}.back{display:inline-block;margin:20px 0;color:var(--gold2);text-decoration:none}
+.layout{display:grid;grid-template-columns:1.12fr .88fr;gap:30px}.main-image{height:540px;background:#fff;border-radius:10px;overflow:hidden;border:1px solid #2d2d2d;cursor:zoom-in}.main-image img{width:100%;height:100%;object-fit:contain}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:10px}.thumb{border:1px solid #303030;background:#fff;border-radius:7px;height:105px;padding:0;overflow:hidden;cursor:pointer}.thumb img{width:100%;height:100%;object-fit:cover}
+.product-code{font-size:11px;color:#777;margin-bottom:7px}.badge{font-size:11px;color:var(--gold2);letter-spacing:2px}h1{font-family:Georgia,serif;font-weight:normal;font-size:34px;margin:8px 0}.price{font-size:26px;font-weight:bold;color:var(--gold2);margin:11px 0 8px}
+.old-price{font-size:17px;color:#888;text-decoration:line-through;margin-right:8px}.promo{font-size:12px;color:#f2b84b;font-weight:bold;margin-bottom:8px}
+.payment-info{font-size:12px;line-height:1.55;color:#c9b98f;margin-bottom:18px}.desc{line-height:1.7;color:#ccc}
+.color-box{margin:22px 0}.color-label{font-size:13px;color:#bbb;margin-bottom:10px}.color-label strong{color:var(--gold2)}.colors{display:flex;flex-wrap:wrap;gap:9px}
+.color-btn{display:flex;align-items:center;gap:8px;background:#161616;color:#ddd;border:1px solid #383838;border-radius:999px;padding:9px 12px;cursor:pointer}.color-btn.active,.color-btn:hover{border-color:var(--gold2);color:var(--gold2)}.dot{width:17px;height:17px;border-radius:50%;border:1px solid rgba(255,255,255,.45)}
+.details{border-top:1px solid #292929;border-bottom:1px solid #292929;padding:13px 0;margin:20px 0}.row{display:flex;justify-content:space-between;gap:15px;padding:8px 0;color:#c8c8c8}.row strong{color:#f3e8cc;text-align:right}
+.features{color:#c8c8c8;line-height:1.8;padding-left:19px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.btn{display:block;padding:14px;text-align:center;text-decoration:none;border-radius:5px;font-weight:bold}.whats{background:var(--gold);color:#111}.insta{border:1px solid var(--gold);color:var(--gold2)}.note{font-size:11px;color:#888;text-align:center;margin-top:10px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:999;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal img{max-width:95vw;max-height:90vh;object-fit:contain;background:#fff}.close{position:absolute;top:18px;right:24px;font-size:36px;color:#fff;cursor:pointer}
+footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
+@media(max-width:780px){.layout{grid-template-columns:1fr}.main-image{height:410px}.gallery{grid-template-columns:repeat(3,1fr)}.actions{grid-template-columns:1fr}}
+</style></head><body>
+<header><div class="logo">GATTA</div><div class="sub">BOLSAS E ACESSÓRIOS</div></header>
+<main class="wrap"><a class="back" href="bolsas.html">← Voltar para Bolsas</a>
+<div class="layout">
+<section>
+<div class="main-image" onclick="openZoom()"><img id="mainImg" src="imagens/j05-bege.webp" alt="Bolsa Feminina Meia Lua de Ombro e Mão bege"></div>
+<div class="gallery"><button class="thumb" onclick="showImage(document.querySelector('.color-btn.active').dataset.img,'Cor selecionada')"><img id="colorThumb" src="imagens/j05-bege.webp" alt="Cor selecionada"></button><button class="thumb" onclick="showImage('imagens/j05-medidas.webp','Medidas e especificações')"><img src="imagens/j05-medidas.webp" alt="Medidas e especificações"></button><button class="thumb" onclick="showImage('imagens/j05-detalhe.webp','Detalhes da bolsa')"><img src="imagens/j05-detalhe.webp" alt="Detalhes da bolsa"></button><button class="thumb" onclick="showImage('imagens/j05-interior.webp','Interior da bolsa')"><img src="imagens/j05-interior.webp" alt="Interior da bolsa"></button><button class="thumb" onclick="showImage('imagens/j05-ambiente.webp','Bolsa em ambiente')"><img src="imagens/j05-ambiente.webp" alt="Bolsa em ambiente"></button><button class="thumb" onclick="showImage('imagens/j05-uso.webp','Demonstração de uso')"><img src="imagens/j05-uso.webp" alt="Demonstração de uso"></button></div>
+</section>
+<section>
+<div class="product-code">Código: J05</div><div class="badge">BOLSA MEIA LUA • PROMOÇÃO</div>
+<h1>Bolsa Feminina Meia Lua de Ombro e Mão</h1>
+<div class="promo">🔥 OFERTA ESPECIAL</div>
+<div class="price"><span class="old-price">R$ 99,90</span>R$ 69,90</div>
+<div class="payment-info">Preço para pagamento em dinheiro ou Pix.<br>Parcelamento em até 12x no cartão de crédito — consulte as taxas pelo WhatsApp.</div>
+<p class="desc">A Bolsa Feminina Meia Lua é a escolha ideal para quem procura estilo e praticidade em um acessório compacto e sofisticado. Seu formato moderno combina perfeitamente com festas, passeios e eventos casuais. Produzida em PVC de alta qualidade, possui toque macio, acabamento resistente e superfície impermeável, oferecendo elegância e durabilidade para acompanhar diferentes ocasiões.</p>
+<div class="color-box"><div class="color-label">Cor selecionada: <strong id="selectedColor">Bege</strong></div><div class="colors"><button class="color-btn active" data-name="Bege" data-img="imagens/j05-bege.webp" onclick="selectColor(this)">
+    <span class="dot" style="background:#e6d8c7"></span>Bege</button><button class="color-btn" data-name="Branca" data-img="imagens/j05-branca.webp" onclick="selectColor(this)">
+    <span class="dot" style="background:#f5f5f2"></span>Branca</button><button class="color-btn" data-name="Preta" data-img="imagens/j05-preta.webp" onclick="selectColor(this)">
+    <span class="dot" style="background:#171717"></span>Preta</button><button class="color-btn" data-name="Rosa" data-img="imagens/j05-rosa.webp" onclick="selectColor(this)">
+    <span class="dot" style="background:#d94d8d"></span>Rosa</button></div></div>
+<div class="details">
+<div class="row"><span>Material</span><strong>PVC</strong></div>
+<div class="row"><span>Medidas</span><strong>Apresentadas nas fotos</strong></div>
+<div class="row"><span>Cor</span><strong id="colorDetail">Bege</strong></div>
+<div class="row"><span>Disponibilidade</span><strong>Consulte pelo WhatsApp</strong></div>
+<div class="row"><span>Entrega</span><strong>Sem custo adicional • Frete grátis</strong></div>
+</div>
+<ul class="features">
+<li>Formato meia lua moderno e elegante.</li>
+<li>Pode ser usada no ombro ou na mão.</li>
+<li>Material macio, resistente e impermeável.</li>
+<li>Fechamento em zíper.</li>
+<li>Ideal para festas, passeios e eventos casuais.</li>
+</ul>
+<div class="actions">
+<a id="whatsappBtn" class="btn whats" href="#" target="_blank">COMPRAR PELO WHATSAPP</a>
+<a class="btn insta" href="https://www.instagram.com/gattabolsas/" target="_blank" rel="noopener">VER INSTAGRAM</a>
+</div>
+<div class="note">A mensagem do WhatsApp informa automaticamente a cor escolhida.</div>
+</section></div></main>
+<div id="modal" class="modal" onclick="closeZoom(event)"><span class="close">&times;</span><img id="zoomImg" src="" alt=""></div>
+<footer>GATTA • Bolsas e Acessórios</footer>
+<script>
+const phone="5514998378384", product="Bolsa Feminina Meia Lua de Ombro e Mão", price="R$ 69,90";
+function updateWhatsapp(color){const msg=`Olá! Tenho interesse na ${product}, código J05, na cor ${color} (${price}).`;document.getElementById('whatsappBtn').href=`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;}
+function selectColor(btn){document.querySelectorAll('.color-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const n=btn.dataset.name,img=btn.dataset.img;document.getElementById('selectedColor').textContent=n;document.getElementById('colorDetail').textContent=n;document.getElementById('mainImg').src=img;document.getElementById('colorThumb').src=img;updateWhatsapp(n);}
+function showImage(src,alt){const i=document.getElementById('mainImg');i.src=src;i.alt=alt;window.scrollTo({top:0,behavior:'smooth'});}
+function openZoom(){document.getElementById('zoomImg').src=document.getElementById('mainImg').src;document.getElementById('modal').classList.add('open');}
+function closeZoom(e){if(e.target.id==='modal'||e.target.classList.contains('close'))document.getElementById('modal').classList.remove('open');}
+updateWhatsapp('Bege');
+</script></body></html>
