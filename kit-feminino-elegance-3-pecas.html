@@ -12,13 +12,13 @@ header{padding:20px;text-align:center;border-bottom:1px solid #292929} .logo{fon
 .sub{font-size:10px;letter-spacing:3px;color:var(--gold);margin-top:5px} .wrap{max-width:1120px;margin:auto;padding:0 18px 45px}
 .back{display:inline-block;margin:20px 0;color:var(--gold2);text-decoration:none} .layout{display:grid;grid-template-columns:1.12fr .88fr;gap:30px}
 .main-image{height:540px;background:#fff;border-radius:10px;overflow:hidden;border:1px solid #2d2d2d;cursor:zoom-in}
-.main-image img{width:100%;height:100%;object-fit:contain} .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:10px}
+.main-image img,.main-image video{width:100%;height:100%;object-fit:contain} .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:10px}
 .thumb{border:1px solid #303030;background:#fff;border-radius:7px;height:105px;padding:0;overflow:hidden;cursor:pointer}
-.thumb img{width:100%;height:100%;object-fit:cover} .product-code{font-size:11px;color:#777;margin-bottom:7px}.badge{font-size:11px;color:var(--gold2);letter-spacing:2px}
+.thumb img,.thumb video{width:100%;height:100%;object-fit:cover} .product-code{font-size:11px;color:#777;margin-bottom:7px}.badge{font-size:11px;color:var(--gold2);letter-spacing:2px}
 h1{font-family:Georgia,serif;font-weight:normal;font-size:34px;margin:8px 0} .price{font-size:26px;font-weight:bold;color:var(--gold2);margin:11px 0 20px}
 .desc{line-height:1.7;color:#ccc}.payment-info{font-size:12px;line-height:1.55;color:#c9b98f;margin-top:-10px;margin-bottom:18px} .color-box{margin:22px 0} .color-label{font-size:13px;color:#bbb;margin-bottom:10px}
 .color-label strong{color:var(--gold2)} .colors{display:flex;flex-wrap:wrap;gap:9px} .color-btn{display:flex;align-items:center;gap:8px;background:#161616;color:#ddd;border:1px solid #383838;border-radius:999px;padding:9px 12px;cursor:pointer}
-.color-btn.active,.color-btn:hover{border-color:var(--gold2);color:var(--gold2)} .dot{width:17px;height:17px;border-radius:50%;border:1px solid rgba(255,255,255,.45)}
+.color-btn.active,.color-btn:hover{border-color:var(--gold2);color:var(--gold2)} .video-demo{margin-top:12px} .video-demo .color-btn{width:max-content} .dot{width:17px;height:17px;border-radius:50%;border:1px solid rgba(255,255,255,.45)}
 .details{border-top:1px solid #292929;border-bottom:1px solid #292929;padding:13px 0;margin:20px 0} .row{display:flex;justify-content:space-between;gap:15px;padding:8px 0;color:#c8c8c8}
 .row strong{color:#f3e8cc;text-align:right} .features{color:#c8c8c8;line-height:1.8;padding-left:19px}
 .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px} .btn{display:block;padding:14px;text-align:center;text-decoration:none;border-radius:5px;font-weight:bold}
@@ -56,6 +56,8 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
 <img alt="Demonstração de uso" src="imagens/uso-produto.webp"/>
 </button><button class="thumb" onclick="showImage('imagens/foto-ambiente.webp', 'Kit em composição')">
 <img alt="Kit em composição" src="imagens/foto-ambiente.webp"/>
+</button><button class="thumb" onclick="showVideo()" aria-label="Vídeo demonstrativo">
+<video muted playsinline preload="metadata"><source src="videos/j02-demonstrativo.mp4" type="video/mp4"/></video>
 </button>
 </div>
 </section>
@@ -79,6 +81,7 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
     </button><button class="color-btn" data-img="imagens/marrom-caramelo.webp" data-name="Marrom Caramelo" onclick="selectColor(this)">
 <span class="dot" style="background:#744225"></span>Marrom Caramelo
     </button></div>
+<div class="video-demo"><button class="color-btn" type="button" onclick="showVideo()">▶ Vídeo demonstrativo</button></div>
 </div>
 <div class="details">
 <div class="row"><span>Material</span><strong>Sintético</strong></div>
@@ -119,18 +122,28 @@ function selectColor(btn){
   const img = btn.dataset.img;
   document.getElementById('selectedColor').textContent = name;
   document.getElementById('colorDetail').textContent = name;
-  document.getElementById('mainImg').src = img;
-  document.getElementById('mainImg').alt = `${product} na cor ${name}`;
+  showImage(img, `${product} na cor ${name}`);
   document.getElementById('colorThumb').src = img;
   updateWhatsapp(name);
 }
 function showImage(src, alt){
-  const img=document.getElementById('mainImg');
-  img.src=src; img.alt=alt;
+  const box=document.querySelector('.main-image');
+  box.onclick=openZoom;
+  box.innerHTML=`<img alt="${alt}" id="mainImg" src="${src}"/>`;
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function showVideo(){
+  const box=document.querySelector('.main-image');
+  box.onclick=null;
+  box.innerHTML='<video id="mainVideo" controls autoplay muted playsinline preload="auto"><source src="videos/j02-demonstrativo.mp4" type="video/mp4">Seu navegador não suporta vídeo.</video>';
+  const v=document.getElementById('mainVideo');
+  v.play().catch(()=>{});
   window.scrollTo({top:0,behavior:'smooth'});
 }
 function openZoom(){
-  document.getElementById('zoomImg').src=document.getElementById('mainImg').src;
+  const img=document.getElementById('mainImg');
+  if(!img) return;
+  document.getElementById('zoomImg').src=img.src;
   document.getElementById('modal').classList.add('open');
 }
 function closeZoom(e){
