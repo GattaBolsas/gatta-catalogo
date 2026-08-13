@@ -1,8 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Bolsa Tiracolo Estilo Baguete — GATTA</title>
 <style>
 :root{--bg:#090909;--gold:#b08d3b;--gold2:#dec47f;--text:#f7f2e8}
@@ -54,46 +55,48 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
   .gallery{grid-template-columns:repeat(3,1fr)}
   .actions{grid-template-columns:1fr}
 }
+
+.product-date{font-size:10px;color:#8f8f8f;margin:5px 0 8px;letter-spacing:.2px}
 </style>
 </head>
 <body>
 <header><div class="logo">GATTA</div><div class="sub">BOLSAS E ACESSÓRIOS</div></header>
 <main class="wrap">
-<a class="back" href="bolsas.html">← Voltar para Bolsas</a>
+<a class="back" href="promocoes.html">← Voltar para Promoções</a>
 <div class="layout">
 <section>
 <div class="main-image" onclick="openZoom()">
-<img id="mainImg" src="imagens/j26-cafe.webp" alt="Bolsa Tiracolo Estilo Baguete na cor Café">
+<img alt="Bolsa Tiracolo Estilo Baguete na cor Café" id="mainImg" src="imagens/j26-cafe.webp"/>
 </div>
 <div class="gallery">
-<button class="thumb" onclick="showImage(document.querySelector('.color-btn.active').dataset.img,'Cor selecionada')"><img id="colorThumb" src="imagens/j26-cafe.webp" alt="Cor selecionada"></button>
-<button class="thumb" onclick="showImage('imagens/j26-ambiente.webp','Bolsa Café em ambiente')"><img src="imagens/j26-ambiente.webp" alt="Bolsa Café em ambiente"></button>
-<button class="thumb" onclick="showImage('imagens/j26-medidas.webp','Medidas da bolsa')"><img src="imagens/j26-medidas.webp" alt="Medidas da bolsa"></button>
-<button class="thumb" onclick="showImage('imagens/j26-preta.webp','Bolsa na cor Preta')"><img src="imagens/j26-preta.webp" alt="Bolsa na cor Preta"></button>
-<button class="thumb" onclick="showImage('imagens/j26-vermelha.webp','Bolsa na cor Vermelha')"><img src="imagens/j26-vermelha.webp" alt="Bolsa na cor Vermelha"></button>
-<button class="thumb" onclick="showImage('imagens/j26-branca.webp','Bolsa na cor Branca')"><img src="imagens/j26-branca.webp" alt="Bolsa na cor Branca"></button>
-<button class="thumb" onclick="showImage('imagens/j26-nude.webp','Bolsa na cor Nude')"><img src="imagens/j26-nude.webp" alt="Bolsa na cor Nude"></button>
+<button class="thumb" onclick="showImage(document.querySelector('.color-btn.active').dataset.img,'Cor selecionada')"><img alt="Cor selecionada" id="colorThumb" src="imagens/j26-cafe.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j26-ambiente.webp','Bolsa Café em ambiente')"><img alt="Bolsa Café em ambiente" src="imagens/j26-ambiente.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j26-medidas.webp','Medidas da bolsa')"><img alt="Medidas da bolsa" src="imagens/j26-medidas.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j26-preta.webp','Bolsa na cor Preta')"><img alt="Bolsa na cor Preta" src="imagens/j26-preta.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j26-vermelha.webp','Bolsa na cor Vermelha')"><img alt="Bolsa na cor Vermelha" src="imagens/j26-vermelha.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j26-branca.webp','Bolsa na cor Branca')"><img alt="Bolsa na cor Branca" src="imagens/j26-branca.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j26-nude.webp','Bolsa na cor Nude')"><img alt="Bolsa na cor Nude" src="imagens/j26-nude.webp"/></button>
 </div>
 </section>
 <section>
-<div class="product-code">Código: J26</div>
+<div class="product-code">Código: J26</div><div class="product-date">No catálogo promoção até 18/08/2026</div>
 <div class="badge">NOVIDADE • PROMOÇÃO</div>
 <h1>Bolsa Tiracolo Estilo Baguete</h1>
 <div class="promo">🔥 OFERTA ESPECIAL</div>
 <div class="price"><span class="old-price">R$ 79,90</span>R$ 69,90</div>
 <div class="payment-info">
-Preço para pagamento em dinheiro ou Pix.<br>
+Preço para pagamento em dinheiro ou Pix.<br/>
 Parcelamento em até 12x no cartão de crédito — consulte as taxas pelo WhatsApp.
 </div>
 <p class="desc">A Bolsa Tiracolo Estilo Baguete é uma opção moderna e elegante para o dia a dia. Seu formato compacto combina praticidade com um visual sofisticado, enquanto o acabamento sintético e os detalhes dourados valorizam o design. A alça de ombro proporciona conforto no uso e o modelo é ideal para passeios, compromissos e produções casuais, levando os itens essenciais com estilo.</p>
 <div class="color-box">
 <div class="color-label">Cor selecionada: <strong id="selectedColor">Café</strong></div>
 <div class="colors">
-<button class="color-btn active" data-name="Café" data-img="imagens/j26-cafe.webp" onclick="selectColor(this)"><span class="dot" style="background:#4a2c24"></span>Café</button>
-<button class="color-btn" data-name="Branca" data-img="imagens/j26-branca.webp" onclick="selectColor(this)"><span class="dot" style="background:#f3f0e8"></span>Branca</button>
-<button class="color-btn" data-name="Preta" data-img="imagens/j26-preta.webp" onclick="selectColor(this)"><span class="dot" style="background:#171717"></span>Preta</button>
-<button class="color-btn" data-name="Vermelha" data-img="imagens/j26-vermelha.webp" onclick="selectColor(this)"><span class="dot" style="background:#c51f32"></span>Vermelha</button>
-<button class="color-btn" data-name="Nude" data-img="imagens/j26-nude.webp" onclick="selectColor(this)"><span class="dot" style="background:#c9a27f"></span>Nude</button>
+<button class="color-btn active" data-img="imagens/j26-cafe.webp" data-name="Café" onclick="selectColor(this)"><span class="dot" style="background:#4a2c24"></span>Café</button>
+<button class="color-btn" data-img="imagens/j26-branca.webp" data-name="Branca" onclick="selectColor(this)"><span class="dot" style="background:#f3f0e8"></span>Branca</button>
+<button class="color-btn" data-img="imagens/j26-preta.webp" data-name="Preta" onclick="selectColor(this)"><span class="dot" style="background:#171717"></span>Preta</button>
+<button class="color-btn" data-img="imagens/j26-vermelha.webp" data-name="Vermelha" onclick="selectColor(this)"><span class="dot" style="background:#c51f32"></span>Vermelha</button>
+<button class="color-btn" data-img="imagens/j26-nude.webp" data-name="Nude" onclick="selectColor(this)"><span class="dot" style="background:#c9a27f"></span>Nude</button>
 </div>
 </div>
 <div class="details">
@@ -113,16 +116,16 @@ Parcelamento em até 12x no cartão de crédito — consulte as taxas pelo Whats
 <li>Ideal para passeios, compromissos e ocasiões casuais.</li>
 </ul>
 <div class="actions">
-<a id="whatsappBtn" class="btn whats" href="#" target="_blank">COMPRAR PELO WHATSAPP</a>
-<a class="btn insta" href="https://www.instagram.com/gattabolsas.acessorios/" target="_blank" rel="noopener">VER INSTAGRAM</a>
+<a class="btn whats" href="#" id="whatsappBtn" target="_blank">COMPRAR PELO WHATSAPP</a>
+<a class="btn insta" href="https://www.instagram.com/gattabolsas.acessorios/" rel="noopener" target="_blank">VER INSTAGRAM</a>
 </div>
 <div class="note">A mensagem do WhatsApp informa automaticamente a cor escolhida.</div>
 </section>
 </div>
 </main>
-<div id="modal" class="modal" onclick="closeZoom(event)">
-<span class="close">&times;</span>
-<img id="zoomImg" src="" alt="">
+<div class="modal" id="modal" onclick="closeZoom(event)">
+<span class="close">×</span>
+<img alt="" id="zoomImg" src=""/>
 </div>
 <footer>GATTA • Bolsas e Acessórios</footer>
 <script>

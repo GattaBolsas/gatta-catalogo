@@ -15,7 +15,7 @@ main{width:100%;max-width:900px;margin:auto;padding:42px 20px 60px}
 .category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .category{min-height:330px;background:linear-gradient(145deg,#181818,#101010);border:1px solid #353535;border-radius:16px;text-decoration:none;color:var(--text);display:flex;flex-direction:column;align-items:center;justify-content:center;transition:.2s;padding:24px}
 .category:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 14px 35px rgba(0,0,0,.35)}
-.icon{font-size:112px;line-height:1;margin-bottom:24px}
+.icon{font-size:112px;line-height:1;margin-bottom:24px;color:var(--gold2);display:flex;align-items:center;justify-content:center}.icon svg{width:112px;height:112px;display:block}
 .category strong{font-family:Georgia,serif;font-size:34px;letter-spacing:3px;color:var(--gold2)}
 .category span{font-size:12px;color:var(--muted);margin-top:10px}
 .contacts{margin-top:30px;background:linear-gradient(145deg,#181818,#101010);border:1px solid #353535;border-radius:14px;padding:22px;text-align:center}
@@ -31,7 +31,7 @@ footer{text-align:center;padding:24px;border-top:1px solid #292929;color:#777;fo
   main{padding:28px 16px 45px}
   .category-grid{grid-template-columns:1fr;gap:16px}
   .category{min-height:230px}
-  .icon{font-size:82px;margin-bottom:17px}
+  .icon{font-size:82px;margin-bottom:17px}.icon svg{width:82px;height:82px}
   .category strong{font-size:27px}
 }
 </style>
@@ -40,6 +40,16 @@ footer{text-align:center;padding:24px;border-top:1px solid #292929;color:#777;fo
 <header><div class="logo">GATTA</div><div class="sub">BOLSAS E ACESSÓRIOS</div></header>
 <main>
 <div class="category-grid">
+<a class="category" href="promocoes.html">
+<div class="icon">🏷️</div>
+<strong>PROMOÇÕES</strong>
+<span>Ofertas especiais! — aproveite, os produtos mudam toda semana!</span>
+</a>
+<a class="category" href="novidades.html">
+<div class="icon">✨</div>
+<strong>NOVIDADES</strong>
+<span>Produtos recém-chegados ao nosso catálogo</span>
+</a>
 <a class="category" href="bolsas.html">
 <div class="icon">👜</div>
 <strong>BOLSAS</strong>
@@ -50,10 +60,15 @@ footer{text-align:center;padding:24px;border-top:1px solid #292929;color:#777;fo
 <strong>CARTEIRAS</strong>
 <span>Ver produtos</span>
 </a>
-<a class="category" href="novidades.html">
-<div class="icon">✨</div>
-<strong>NOVIDADES</strong>
-<span>Ver lançamentos</span>
+<a class="category" href="cintos.html">
+<div class="icon"><img src="imagens/icone-cinto-colorido.png" alt="Cinto" style="width:100%;height:100%;object-fit:contain;"></div>
+<strong>CINTOS</strong>
+<span>Ver produtos</span>
+</a>
+<a class="category" href="acessorios.html">
+<div class="icon">🧣</div>
+<strong>ACESSÓRIOS</strong>
+<span>Ver produtos</span>
 </a>
 </div>
 <section class="contacts">

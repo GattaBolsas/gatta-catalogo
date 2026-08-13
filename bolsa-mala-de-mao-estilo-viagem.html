@@ -1,5 +1,6 @@
-<!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Bolsa Mala de Mão – Estilo Viagem — GATTA</title>
 <style>
 :root{--bg:#090909;--card:#141414;--gold:#b08d3b;--gold2:#dec47f;--text:#f7f2e8;--muted:#aaa}
@@ -15,31 +16,35 @@ header{padding:20px;text-align:center;border-bottom:1px solid #292929}.logo{font
 .modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:999;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal img{max-width:95vw;max-height:90vh;object-fit:contain;background:#fff}.close{position:absolute;top:18px;right:24px;font-size:36px;color:white;cursor:pointer}
 footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
 @media(max-width:780px){.layout{grid-template-columns:1fr}.main-image{height:410px}.gallery{grid-template-columns:repeat(3,1fr)}.actions{grid-template-columns:1fr}}
+
+.product-date{font-size:10px;color:#8f8f8f;margin:5px 0 8px;letter-spacing:.2px}
+
+.color-box{margin:22px 0}.color-label{font-size:13px;color:#bbb;margin-bottom:10px}.color-label strong{color:var(--gold2)}.colors{display:flex;flex-wrap:wrap;gap:9px}.color-btn{display:flex;align-items:center;gap:8px;background:#161616;color:#ddd;border:1px solid #383838;border-radius:999px;padding:9px 12px;cursor:pointer}.color-btn.active{border-color:var(--gold);color:var(--gold2)}.dot{width:18px;height:18px;border-radius:50%;border:1px solid #777}
 </style></head>
 <body>
 <header><div class="logo">GATTA</div><div class="sub">BOLSAS E ACESSÓRIOS</div></header>
 <main class="wrap"><a class="back" href="bolsas.html">← Voltar para Bolsas</a>
 <div class="layout">
 <section>
-<div class="main-image" onclick="openZoom()"><img id="mainImg" src="imagens/j23-roxo.png" alt="Bolsa Mala de Mão Estilo Viagem na cor roxa"></div>
+<div class="main-image" onclick="openZoom()"><img alt="Bolsa Mala de Mão Estilo Viagem na cor roxa" id="mainImg" src="imagens/j23-roxo.png"/></div>
 <div class="gallery">
-<button class="thumb" onclick="showImage('imagens/j23-roxo.png','Bolsa Mala de Mão na cor roxa')"><img src="imagens/j23-roxo.png" alt="Cor roxa"></button>
-<button class="thumb" onclick="showImage('imagens/j23-lilas.png','Bolsa Mala de Mão na cor lilás')"><img src="imagens/j23-lilas.png" alt="Cor lilás"></button>
-<button class="thumb" onclick="showImage('imagens/j23-vinho.png','Bolsa Mala de Mão na cor vinho')"><img src="imagens/j23-vinho.png" alt="Cor vinho"></button>
-<button class="thumb" onclick="showImage('imagens/j23-cores.webp','Cores e encaixe para mala de viagem')"><img src="imagens/j23-cores.webp" alt="Cores e encaixe para mala"></button>
-<button class="thumb" onclick="showImage('imagens/j23-detalhes.webp','Detalhes, bolsos e acabamento')"><img src="imagens/j23-detalhes.webp" alt="Detalhes e acabamento"></button>
-<button class="thumb" onclick="showImage('imagens/j23-interior.webp','Compartimento interno espaçoso')"><img src="imagens/j23-interior.webp" alt="Interior espaçoso"></button>
-<button class="thumb" onclick="showImage('imagens/j23-mala.webp','Encaixe traseiro para mala de viagem')"><img src="imagens/j23-mala.webp" alt="Encaixe para mala"></button>
-<button class="thumb" onclick="showImage('imagens/j23-sapatos.webp','Compartimento separado para calçados')"><img src="imagens/j23-sapatos.webp" alt="Compartimento para calçados"></button>
-<button class="thumb" onclick="showImage('imagens/j23-uso.webp','Bolsa Mala de Mão em uso')"><img src="imagens/j23-uso.webp" alt="Produto em uso"></button>
+<button class="thumb" onclick="showImage('imagens/j23-roxo.png','Bolsa Mala de Mão na cor roxa')"><img alt="Cor roxa" src="imagens/j23-roxo.png"/></button>
+<button class="thumb" onclick="showImage('imagens/j23-lilas.png','Bolsa Mala de Mão na cor lilás')"><img alt="Cor lilás" src="imagens/j23-lilas.png"/></button>
+<button class="thumb" onclick="showImage('imagens/j23-vinho.png','Bolsa Mala de Mão na cor vinho')"><img alt="Cor vinho" src="imagens/j23-vinho.png"/></button>
+<button class="thumb" onclick="showImage('imagens/j23-cores.webp','Cores e encaixe para mala de viagem')"><img alt="Cores e encaixe para mala" src="imagens/j23-cores.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j23-detalhes.webp','Detalhes, bolsos e acabamento')"><img alt="Detalhes e acabamento" src="imagens/j23-detalhes.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j23-interior.webp','Compartimento interno espaçoso')"><img alt="Interior espaçoso" src="imagens/j23-interior.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j23-mala.webp','Encaixe traseiro para mala de viagem')"><img alt="Encaixe para mala" src="imagens/j23-mala.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j23-sapatos.webp','Compartimento separado para calçados')"><img alt="Compartimento para calçados" src="imagens/j23-sapatos.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j23-uso.webp','Bolsa Mala de Mão em uso')"><img alt="Produto em uso" src="imagens/j23-uso.webp"/></button>
 </div></section>
 <section>
-<div class="badge">NOVIDADE • Cód. J23</div>
+<div class="badge">Cód. J23</div><div class="product-date">No catálogo desde 12/08/2026</div>
 <h1>Bolsa Mala de Mão – Estilo Viagem</h1>
-<div class="price">R$ 89,90</div>
-<div class="payment-info">Preço para pagamento em dinheiro ou Pix.<br>Parcelamento em até 12x no cartão de crédito — consulte as taxas pelo WhatsApp.</div>
+<div class="price">R$ 99,90</div>
+<div class="payment-info">Preço para pagamento em dinheiro ou Pix.<br/>Parcelamento em até 12x no cartão de crédito — consulte as taxas pelo WhatsApp.</div>
 <p class="desc">Prática, espaçosa e versátil, esta bolsa mala de mão é ideal para viagens, academia e uso diário. Possui amplo espaço interno, compartimentos organizadores e bolso separado para calçados. Conta ainda com alças de mão reforçadas, alça transversal regulável e encaixe traseiro para transporte sobre a mala. Suporta até 10 kg.</p>
-<div class="details">
+<div class="color-box"><div class="color-label">Cor selecionada: <strong id="selectedColor">Roxo</strong></div><div class="colors"><button class="color-btn active" data-img="imagens/j23-roxo.png" data-name="Roxo" onclick="selectColor(this)"><span class="dot" style="background:#6f456f"></span>Roxo</button><button class="color-btn" data-img="imagens/j23-lilas.png" data-name="Lilás" onclick="selectColor(this)"><span class="dot" style="background:#b89acb"></span>Lilás</button><button class="color-btn" data-img="imagens/j23-vinho.png" data-name="Vinho" onclick="selectColor(this)"><span class="dot" style="background:#6d2436"></span>Vinho</button></div></div><div class="details">
 <div class="row"><span>Material</span><strong>Sintético</strong></div>
 <div class="row"><span>Medidas</span><strong>26 × 22 × 22 cm</strong></div>
 <div class="row"><span>Capacidade suportada</span><strong>Até 10 kg</strong></div>
@@ -56,18 +61,20 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
 <li>Ideal para viagens curtas, academia e rotina diária.</li>
 </ul>
 <div class="actions">
-<a id="whatsappBtn" class="btn whats" href="#" target="_blank">COMPRAR PELO WHATSAPP</a>
-<a class="btn insta" href="https://www.instagram.com/gattabolsas.acessorios/" target="_blank" rel="noopener">VER INSTAGRAM</a>
+<a class="btn whats" href="#" id="whatsappBtn" target="_blank">COMPRAR PELO WHATSAPP</a>
+<a class="btn insta" href="https://www.instagram.com/gattabolsas.acessorios/" rel="noopener" target="_blank">VER INSTAGRAM</a>
 </div>
 <div class="note">Confirme a cor disponível no momento do pedido.</div>
 </section></div></main>
-<div id="modal" class="modal" onclick="closeZoom(event)"><span class="close">&times;</span><img id="zoomImg" src="" alt=""></div>
+<div class="modal" id="modal" onclick="closeZoom(event)"><span class="close">×</span><img alt="" id="zoomImg" src=""/></div>
 <footer>GATTA • Bolsas e Acessórios</footer>
 <script>
-const phone="5514998378384", product="Bolsa Mala de Mão – Estilo Viagem", price="R$ 89,90";
+const phone="5514998378384", product="Bolsa Mala de Mão – Estilo Viagem", price="R$ 99,90";
 const msg=`Olá! Tenho interesse na ${product} (${price}). Gostaria de consultar as cores disponíveis.`;
 document.getElementById('whatsappBtn').href=`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
 function showImage(src,alt){const i=document.getElementById('mainImg');i.src=src;i.alt=alt;window.scrollTo({top:0,behavior:'smooth'});}
 function openZoom(){document.getElementById('zoomImg').src=document.getElementById('mainImg').src;document.getElementById('modal').classList.add('open');}
 function closeZoom(e){if(e.target.id==='modal'||e.target.classList.contains('close'))document.getElementById('modal').classList.remove('open');}
+
+function selectColor(btn){document.querySelectorAll('.color-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.getElementById('selectedColor').textContent=btn.dataset.name;const i=document.getElementById('mainImg');i.src=btn.dataset.img;i.alt='Cor '+btn.dataset.name;}
 </script></body></html>

@@ -1,4 +1,5 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Novidades — GATTA</title><style>
 :root{--bg:#0b0b0b;--card:#151515;--gold:#b08d3b;--gold2:#d8bc78;--text:#f6f2e9;--muted:#aaa}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,sans-serif}
@@ -9,57 +10,38 @@ h1{font-family:Georgia,serif;font-weight:normal;color:var(--gold2);font-size:32p
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.product{background:var(--card);border:1px solid #292929;border-radius:8px;overflow:hidden}
 .pic{height:330px;background:#fff;position:relative}.pic img{width:100%;height:100%;object-fit:contain}.info{padding:16px}.badge{font-size:10px;letter-spacing:2px;color:var(--gold2)}
 .name{font-family:Georgia,serif;font-size:20px;margin:8px 0}.desc{font-size:13px;color:var(--muted);line-height:1.5}.price{color:var(--gold2);font-size:19px;font-weight:bold;margin:13px 0 7px}
-.pay{font-size:11px;color:#aaa;line-height:1.4;margin-bottom:10px}.buy{display:block;text-align:center;padding:11px;border:1px solid var(--gold);color:var(--gold2);text-decoration:none;border-radius:4px}
+.pay{font-size:11px;color:#aaa;line-height:1.4;margin-bottom:10px}.buy{display:block;text-align:center;padding:11px;border:1px solid var(--gold);color:var(--gold2);text-decoration:none;border-radius:4px}.unavailable{display:block;text-align:center;padding:11px;border:1px solid #555;color:#999;background:#242424;border-radius:4px;font-weight:bold;letter-spacing:1px;cursor:not-allowed;user-select:none}.soldout{opacity:.88}.soldout .pic{filter:grayscale(12%)}.soldout-label{position:absolute;top:16px;right:14px;background:#c51616;color:#fff;border:2px solid #fff;padding:8px 13px;border-radius:5px;font-size:15px;font-weight:bold;letter-spacing:1.4px;z-index:2;box-shadow:0 3px 10px rgba(0,0,0,.35);transform:rotate(3deg)}
 footer{text-align:center;padding:28px;color:#777;border-top:1px solid #292929}
 @media(max-width:750px){.grid{grid-template-columns:1fr}.pic{height:390px}}
+
+.product-date{font-size:10px;color:#8f8f8f;margin:5px 0 8px;letter-spacing:.2px}
 </style></head><body>
 <header><div class="logo">GATTA</div><div class="sub">BOLSAS E ACESSÓRIOS</div></header>
 <main class="wrap"><a class="back" href="index.html">← Voltar às categorias</a><h1>Novidades</h1><div class="grid">
 <article class="product">
-<a href="carteira-pequena-com-ziper.html"><div class="pic"><img src="imagens/j19-capa.png" alt="Carteira Pequena com Zíper na cor rosa"></div></a>
+<div class="pic"><img alt="Bolsa Grande Transversal Impermeável de Nylon na cor Rosa" src="imagens/j35-capa.png"/></div>
+<div class="info"><div class="badge">NOVIDADE • Cód. J35</div><div class="product-date">No catálogo novidades desde 12/08/2026</div><div class="name">Bolsa Grande Transversal Impermeável de Nylon</div><div class="desc">Bolsa transversal grande em nylon, prática e espaçosa, com vários compartimentos e alça ajustável.</div><div class="price">R$ 99,90</div><a class="buy" href="bolsa-grande-transversal-impermeavel-nylon-j35.html">VER PRODUTO</a></div></article>
+
+<article class="product">
+<div class="pic"><img alt="Cinto Estilo Country Unissex" src="imagens/j34-capa.webp"/></div>
+<div class="info"><div class="badge">NOVIDADE • Cód. J34</div><div class="product-date">No catálogo novidades desde 12/08/2026</div><div class="name">Cinto Estilo Country Unissex</div><div class="desc">Modelo country em couro sintético com aplicações metálicas, resistente e versátil para o dia a dia.</div><div class="price">R$ 49,90</div><a class="buy" href="cinto-estilo-country-unissex-j34.html">VER PRODUTO</a></div></article>
+<article class="product">
+<div class="pic"><img alt="Cinto Fino Moda Elegante Casual — cores disponíveis" src="imagens/j33-capa.webp"/></div>
+<div class="info"><div class="badge">NOVIDADE • Cód. J33</div><div class="product-date">No catálogo novidades desde 12/08/2026</div><div class="name">Cinto Fino Moda Elegante Casual</div><div class="desc">Modelo fino e versátil em couro sintético, com fivela arredondada dourada e 7 níveis de ajuste.</div><div class="price">R$ 19,90</div><a class="buy" href="cinto-fino-moda-elegante-casual-j33.html">VER PRODUTO</a></div>
+</article>
+
+<article class="product soldout">
+<div class="pic"><span class="soldout-label">ESGOTADO</span><img alt="Bolsa Feminina Transversal Compacta com Zíper na cor Caramelo" src="imagens/novidade-esgotada-bolsa-j14.webp"/></div>
+<div class="info"><div class="badge">ESGOTADO • Cód. J14</div><div class="product-date">No catálogo novidades desde 12/08/2026</div><div class="name">Bolsa Feminina Transversal Compacta com Zíper</div><div class="desc">Modelo compacto e versátil, com alça transversal e compartimentos com zíper.</div><div class="price">R$ 99,90</div><div aria-disabled="true" class="unavailable">INDISPONÍVEL</div></div>
+</article>
+<article class="product soldout">
+<div class="pic"><span class="soldout-label">ESGOTADO</span><img alt="Carteira Feminina Longa com Zíper e Fecho na cor Marrom" src="imagens/novidade-esgotada-carteira-j16.webp"/></div>
 <div class="info">
-<div class="badge">NOVIDADE • Cód. J19</div>
-<div class="name">Carteira Pequena com Zíper</div>
-<div class="desc">Compacta, elegante e funcional, com fechamento seguro e espaço para os itens essenciais.</div>
+<div class="badge">ESGOTADO • Cód. J16</div><div class="product-date">No catálogo novidades desde 12/08/2026</div>
+<div class="name">Carteira Feminina Longa com Zíper e Fecho</div>
+<div class="desc">Modelo longo e espaçoso, com fechamento por botão e compartimento lateral com zíper para melhor organização.</div>
 <div class="price">R$ 39,90</div>
-<div class="pay">Dinheiro ou Pix. Até 12x no cartão — consulte as taxas.</div>
-<a class="buy" href="carteira-pequena-com-ziper.html">VER PRODUTO</a>
+<div aria-disabled="true" class="unavailable">INDISPONÍVEL</div>
 </div></article>
-
-<article class="product">
-<a href="kit-3-bolsas-carteira.html"><div class="pic"><img src="imagens/j20-preta.webp" alt="Kit 3 Bolsas + Carteira"></div></a>
-<div class="info"><div class="badge">NOVIDADE • Cód. J20</div>
-<div class="name">Kit 3 Bolsas + Carteira</div>
-<div class="desc">Kit completo com 4 peças para trabalho, passeio e dia a dia.</div>
-<div class="price">R$ 99,90</div>
-<div class="pay">Dinheiro ou Pix. Até 12x no cartão — consulte as taxas.</div>
-<a class="buy" href="kit-3-bolsas-carteira.html">VER PRODUTO</a></div></article>
-
-<article class="product">
-<a href="kit-bolsa-mouped-carmen.html"><div class="pic"><img src="imagens/j21-branca.webp" alt="Kit Bolsa Mouped Carmen na cor branca"></div></a>
-<div class="info"><div class="badge">NOVIDADE • Cód. J21</div>
-<div class="name">Kit Bolsa Feminina Transversal Ombro e Lateral - Mouped Carmen</div>
-<div class="desc">Conjunto elegante com bolsa Carmen estruturada e bolsa Mia compacta, ideal para diferentes ocasiões.</div>
-<div class="price">R$ 129,90</div>
-<div class="pay">Dinheiro ou Pix. Até 12x no cartão — consulte as taxas.</div>
-<a class="buy" href="kit-bolsa-mouped-carmen.html">VER PRODUTO</a></div></article>
-
-<article class="product">
-<a href="bolsa-estilo-escolar.html"><div class="pic"><img src="imagens/j22-caramelo.webp" alt="Bolsa estilo escolar"></div></a>
-<div class="info"><div class="badge">NOVIDADE • Cód. J22</div><div class="name">Bolsa estilo escolar</div><div class="desc">Esta mochila feminina é a combinação perfeita de elegância, praticidade e conforto.</div><div class="price">R$ 69,90</div><div class="pay">Dinheiro ou Pix. Até 12x no cartão — consulte as taxas.</div><a class="buy" href="bolsa-estilo-escolar.html">VER PRODUTO</a></div></article>
-
-<article class="product">
-<a href="mochila-estilo-escolar-j25.html"><div class="pic"><img src="imagens/j25-capa.webp" alt="Mochila estilo escolar preta"></div></a>
-<div class="info"><div class="badge">NOVIDADE • Cód. J25</div><div class="name">Mochila Estilo Escolar</div><div class="desc">Mochila reforçada, espaçosa e moderna, com 5 compartimentos, espaço para notebook de até 15,6” e mecanismo antirroubo.</div><div class="price">R$ 99,90</div><div class="pay">Dinheiro ou Pix. Até 12x no cartão — consulte as taxas.</div><a class="buy" href="mochila-estilo-escolar-j25.html">VER PRODUTO</a></div></article>
-
-<article class="product">
-<a href="bolsa-tiracolo-estilo-baguete.html"><div class="pic"><img src="imagens/j26-cafe.webp" alt="Bolsa Tiracolo Estilo Baguete na cor Café"></div></a>
-<div class="info"><div class="badge">🔥 PROMOÇÃO • NOVIDADE • Cód. J26</div><div class="name">Bolsa Tiracolo Estilo Baguete</div><div class="desc">Modelo compacto e moderno, com acabamento sintético, alça de ombro e detalhes dourados.</div><div class="price"><s>R$ 79,90</s> <strong style="color:#d4af37">R$ 69,90</strong></div><div class="pay">Dinheiro ou Pix. Até 12x no cartão — consulte as taxas.</div><a class="buy" href="bolsa-tiracolo-estilo-baguete.html">VER PRODUTO</a></div>
-</article>
-
-<article class="product">
-<a href="bolsa-strass-festa-j27.html"><div class="pic"><img src="imagens/j27-prateada.webp" alt="Bolsa Strass Festa na cor Prateada"></div></a>
-<div class="info"><div class="badge">🔥 PROMOÇÃO DE LANÇAMENTO • NOVIDADE • Cód. J27</div><div class="name">Bolsa Strass Festa</div><div class="desc">Bolsa de festa com brilho em strass, alça de corrente removível e fecho com detalhes em pérola.</div><div class="price"><s>R$ 99,90</s> <strong style="color:#d4af37">R$ 79,90</strong></div><div class="pay">Dinheiro ou Pix. Até 12x no cartão — consulte as taxas.</div><a class="buy" href="bolsa-strass-festa-j27.html">VER PRODUTO</a></div>
-</article>
 </div></main>
 <footer>GATTA • Bolsas e Acessórios</footer></body></html>

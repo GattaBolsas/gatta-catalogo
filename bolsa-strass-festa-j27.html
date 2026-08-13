@@ -1,8 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Bolsa Strass Festa — GATTA</title>
 <style>
 :root{--bg:#090909;--gold:#b08d3b;--gold2:#dec47f;--text:#f7f2e8}
@@ -54,41 +55,43 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
   .gallery{grid-template-columns:repeat(3,1fr)}
   .actions{grid-template-columns:1fr}
 }
+
+.product-date{font-size:10px;color:#8f8f8f;margin:5px 0 8px;letter-spacing:.2px}
 </style>
 </head>
 <body>
 <header><div class="logo">GATTA</div><div class="sub">BOLSAS E ACESSÓRIOS</div></header>
 <main class="wrap">
-<a class="back" href="novidades.html">← Voltar para Novidades</a>
+<a class="back" href="promocoes.html">← Voltar para Promoções</a>
 <div class="layout">
 <section>
 <div class="main-image" onclick="openZoom()">
-<img id="mainImg" src="imagens/j27-prateada.webp" alt="Bolsa Strass Festa na cor Prateada">
+<img alt="Bolsa Strass Festa na cor Prateada" id="mainImg" src="imagens/j27-prateada.webp"/>
 </div>
 <div class="gallery">
-<button class="thumb" onclick="showImage(document.querySelector('.color-btn.active').dataset.img,'Cor selecionada')"><img id="colorThumb" src="imagens/j27-prateada.webp" alt="Cor selecionada"></button>
-<button class="thumb" onclick="showImage('imagens/j27-medidas.webp','Medidas e detalhes internos da bolsa')"><img src="imagens/j27-medidas.webp" alt="Medidas e detalhes internos da bolsa"></button>
-<button class="thumb" onclick="showImage('imagens/j27-detalhe.webp','Detalhe da Bolsa Strass Festa')"><img src="imagens/j27-detalhe.webp" alt="Detalhe da Bolsa Strass Festa"></button>
-<button class="thumb" onclick="showImage('imagens/j27-angulos.webp','Bolsa Strass Festa em diferentes ângulos')"><img src="imagens/j27-angulos.webp" alt="Bolsa Strass Festa em diferentes ângulos"></button>
-<button class="thumb" onclick="showImage('imagens/j27-preta.webp','Bolsa Strass Festa na cor Preta')"><img src="imagens/j27-preta.webp" alt="Bolsa Strass Festa na cor Preta"></button>
+<button class="thumb" onclick="showImage(document.querySelector('.color-btn.active').dataset.img,'Cor selecionada')"><img alt="Cor selecionada" id="colorThumb" src="imagens/j27-prateada.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j27-medidas.webp','Medidas e detalhes internos da bolsa')"><img alt="Medidas e detalhes internos da bolsa" src="imagens/j27-medidas.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j27-detalhe.webp','Detalhe da Bolsa Strass Festa')"><img alt="Detalhe da Bolsa Strass Festa" src="imagens/j27-detalhe.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j27-angulos.webp','Bolsa Strass Festa em diferentes ângulos')"><img alt="Bolsa Strass Festa em diferentes ângulos" src="imagens/j27-angulos.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j27-preta.webp','Bolsa Strass Festa na cor Preta')"><img alt="Bolsa Strass Festa na cor Preta" src="imagens/j27-preta.webp"/></button>
 </div>
 </section>
 <section>
-<div class="product-code">Código: J27</div>
+<div class="product-code">Código: J27</div><div class="product-date">No catálogo promoção até 18/08/2026</div>
 <div class="badge">NOVIDADE • PROMOÇÃO DE LANÇAMENTO</div>
 <h1>Bolsa Strass Festa</h1>
 <div class="promo">🔥 PROMOÇÃO DE LANÇAMENTO</div>
 <div class="price"><span class="old-price">R$ 99,90</span>R$ 79,90</div>
 <div class="payment-info">
-Preço para pagamento em dinheiro ou Pix.<br>
+Preço para pagamento em dinheiro ou Pix.<br/>
 Parcelamento em até 12x no cartão de crédito — consulte as taxas pelo WhatsApp.
 </div>
 <p class="desc">A Bolsa Strass Festa é uma peça sofisticada e cheia de brilho, perfeita para festas, casamentos, formaturas, baladas e ocasiões especiais. Seu acabamento com strass cria um visual marcante e elegante, enquanto a alça de corrente removível permite usar a bolsa de diferentes formas. Compacta por fora e funcional por dentro, ela comporta os itens essenciais com praticidade e estilo.</p>
 <div class="color-box">
 <div class="color-label">Cor selecionada: <strong id="selectedColor">Prateada</strong></div>
 <div class="colors">
-<button class="color-btn active" data-name="Prateada" data-img="imagens/j27-prateada.webp" onclick="selectColor(this)"><span class="dot" style="background:#c9c9c9"></span>Prateada</button>
-<button class="color-btn" data-name="Preta" data-img="imagens/j27-preta.webp" onclick="selectColor(this)"><span class="dot" style="background:#111"></span>Preta</button>
+<button class="color-btn active" data-img="imagens/j27-prateada.webp" data-name="Prateada" onclick="selectColor(this)"><span class="dot" style="background:#c9c9c9"></span>Prateada</button>
+<button class="color-btn" data-img="imagens/j27-preta.webp" data-name="Preta" onclick="selectColor(this)"><span class="dot" style="background:#111"></span>Preta</button>
 </div>
 </div>
 <div class="details">
@@ -108,16 +111,16 @@ Parcelamento em até 12x no cartão de crédito — consulte as taxas pelo Whats
 <li>Ideal para festas e ocasiões especiais.</li>
 </ul>
 <div class="actions">
-<a id="whatsappBtn" class="btn whats" href="#" target="_blank">COMPRAR PELO WHATSAPP</a>
-<a class="btn insta" href="https://www.instagram.com/gattabolsas.acessorios/" target="_blank" rel="noopener">VER INSTAGRAM</a>
+<a class="btn whats" href="#" id="whatsappBtn" target="_blank">COMPRAR PELO WHATSAPP</a>
+<a class="btn insta" href="https://www.instagram.com/gattabolsas.acessorios/" rel="noopener" target="_blank">VER INSTAGRAM</a>
 </div>
 <div class="note">A mensagem do WhatsApp informa automaticamente a cor escolhida.</div>
 </section>
 </div>
 </main>
-<div id="modal" class="modal" onclick="closeZoom(event)">
-<span class="close">&times;</span>
-<img id="zoomImg" src="" alt="">
+<div class="modal" id="modal" onclick="closeZoom(event)">
+<span class="close">×</span>
+<img alt="" id="zoomImg" src=""/>
 </div>
 <footer>GATTA • Bolsas e Acessórios</footer>
 <script>
