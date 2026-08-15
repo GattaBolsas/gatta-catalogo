@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Bolsa Mala De Mão até 10kg — GATTA</title>
+<style>
+:root{--bg:#090909;--card:#141414;--gold:#b08d3b;--gold2:#dec47f;--text:#f7f2e8;--muted:#aaa}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,sans-serif}
+header{padding:20px;text-align:center;border-bottom:1px solid #292929}.logo{font-family:Georgia,serif;letter-spacing:7px;font-size:31px;color:var(--gold2);font-weight:bold}.sub{font-size:10px;letter-spacing:3px;color:var(--gold);margin-top:5px}
+.wrap{max-width:1120px;margin:auto;padding:0 18px 45px}.back{display:inline-block;margin:20px 0;color:var(--gold2);text-decoration:none}
+.layout{display:grid;grid-template-columns:1.12fr .88fr;gap:30px}.main-image{height:540px;background:#fff;border-radius:10px;overflow:hidden;border:1px solid #2d2d2d;cursor:zoom-in}.main-image img{width:100%;height:100%;object-fit:contain}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:10px}.thumb{border:1px solid #303030;background:#fff;border-radius:7px;height:105px;padding:0;overflow:hidden;cursor:pointer}.thumb img{width:100%;height:100%;object-fit:cover}
+.badge{font-size:11px;color:var(--gold2);letter-spacing:2px}h1{font-family:Georgia,serif;font-weight:normal;font-size:34px;margin:8px 0}.price{font-size:26px;font-weight:bold;color:var(--gold2);margin:11px 0 8px}
+.payment-info{font-size:12px;line-height:1.55;color:#c9b98f;margin-bottom:18px}.desc{line-height:1.7;color:#ccc}
+.details{border-top:1px solid #292929;border-bottom:1px solid #292929;padding:13px 0;margin:20px 0}.row{display:flex;justify-content:space-between;gap:15px;padding:8px 0;color:#c8c8c8}.row strong{color:#f3e8cc;text-align:right}
+.features{color:#c8c8c8;line-height:1.8;padding-left:19px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.btn{display:block;padding:14px;text-align:center;text-decoration:none;border-radius:5px;font-weight:bold}.whats{background:var(--gold);color:#111}.insta{border:1px solid var(--gold);color:var(--gold2)}.note{font-size:11px;color:#888;text-align:center;margin-top:10px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:999;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal img{max-width:95vw;max-height:90vh;object-fit:contain;background:#fff}.close{position:absolute;top:18px;right:24px;font-size:36px;color:white;cursor:pointer}
+footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
+@media(max-width:780px){.layout{grid-template-columns:1fr}.main-image{height:410px}.gallery{grid-template-columns:repeat(3,1fr)}.actions{grid-template-columns:1fr}}
+
+.product-date{font-size:10px;color:#8f8f8f;margin:5px 0 8px;letter-spacing:.2px}
+
+.color-box{margin:22px 0}.color-label{font-size:13px;color:#bbb;margin-bottom:10px}.color-label strong{color:var(--gold2)}.colors{display:flex;flex-wrap:wrap;gap:9px}.color-btn{display:flex;align-items:center;gap:8px;background:#161616;color:#ddd;border:1px solid #383838;border-radius:999px;padding:9px 12px;cursor:pointer}.color-btn.active{border-color:var(--gold);color:var(--gold2)}.dot{width:18px;height:18px;border-radius:50%;border:1px solid #777}
+</style></head>
+<body>
+<header><div class="logo">GATTA</div><div class="sub">BOLSAS E ACESSÓRIOS</div></header>
+<main class="wrap"><a class="back" href="novidades.html">← Voltar para Novidades</a>
+<div class="layout">
+<section>
+<div class="main-image" onclick="openZoom()"><img alt="Bolsa Mala De Mão até 10kg na cor cinza" id="mainImg" src="imagens/j40-cinza-capa.webp"/></div>
+<div class="gallery">
+<button class="thumb" onclick="showImage('imagens/j40-cinza-capa.webp','Bolsa Mala De Mão até 10kg')"><img alt="Detalhe do produto" src="imagens/j40-cinza-capa.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j40-info-espacosa.webp','Bolsa Mala De Mão até 10kg')"><img alt="Detalhe do produto" src="imagens/j40-info-espacosa.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j40-medidas.webp','Bolsa Mala De Mão até 10kg')"><img alt="Detalhe do produto" src="imagens/j40-medidas.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j40-detalhes.webp','Bolsa Mala De Mão até 10kg')"><img alt="Detalhe do produto" src="imagens/j40-detalhes.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j40-tenis.webp','Bolsa Mala De Mão até 10kg')"><img alt="Detalhe do produto" src="imagens/j40-tenis.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j40-mala-bordo.webp','Bolsa Mala De Mão até 10kg')"><img alt="Detalhe do produto" src="imagens/j40-mala-bordo.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j40-transporte.webp','Bolsa Mala De Mão até 10kg')"><img alt="Detalhe do produto" src="imagens/j40-transporte.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j40-usos.webp','Bolsa Mala De Mão até 10kg')"><img alt="Detalhe do produto" src="imagens/j40-usos.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j40-marrom.webp','Bolsa Mala De Mão até 10kg')"><img alt="Detalhe do produto" src="imagens/j40-marrom.webp"/></button>
+<button class="thumb" onclick="showImage('imagens/j40-preto.webp','Bolsa Mala De Mão até 10kg')"><img alt="Detalhe do produto" src="imagens/j40-preto.webp"/></button>
+</div></section>
+<section>
+<div class="badge">NOVIDADE • Cód. J40</div><div class="product-date">No catálogo novidades desde 15/08/2026</div>
+<h1>Bolsa Mala De Mão até 10kg</h1>
+<div style="display:inline-block;background:#8b1e3f;color:#fff;border:2px solid #fff;border-radius:4px;padding:6px 9px;font-size:9px;line-height:1.15;font-weight:900;letter-spacing:.6px;text-transform:uppercase;margin:6px 0 14px;box-shadow:0 3px 9px #0007">PREÇO DE LANÇAMENTO</div>
+<div style="font-size:14px;color:#888;text-decoration:line-through">De R$ 109,90</div><div class="price">Por R$ 79,99</div>
+<div class="payment-info">Preço para pagamento em dinheiro ou Pix.<br/>Parcelamento em até 12x no cartão de crédito — consulte as taxas pelo WhatsApp.</div>
+<p class="desc">Uma bolsa mala prática para quem precisa de espaço sem abrir mão da organização. O compartimento principal amplo acomoda roupas, acessórios e itens do dia a dia, enquanto o compartimento inferior separado é ideal para calçados ou peças úmidas. Possui alças de mão reforçadas, alça de ombro removível e ajustável e apoio traseiro para encaixe em mala de viagem. Versátil para viagens, academia, trabalho e passeios, com capacidade de suporte de até 10 kg.</p>
+<div class="color-box"><div class="color-label">Cor selecionada: <strong id="selectedColor">Cinza</strong></div><div class="colors"><button class="color-btn active" data-img="imagens/j40-cinza-capa.webp" data-name="Cinza" onclick="selectColor(this)"><span class="dot" style="background:#b9b9b9"></span>Cinza</button><button class="color-btn" data-img="imagens/j40-preto.webp" data-name="Preto" onclick="selectColor(this)"><span class="dot" style="background:#111"></span>Preto</button><button class="color-btn" data-img="imagens/j40-marrom.webp" data-name="Marrom" onclick="selectColor(this)"><span class="dot" style="background:#b19a7d"></span>Marrom</button></div></div>
+<div class="details"><div class="row"><span>Material</span><strong>Poliéster</strong></div><div class="row"><span>Medidas</span><strong>46 × 28 × 25 cm • conforme fotos</strong></div><div class="row"><span>Capacidade suportada</span><strong>Até 10 kg</strong></div><div class="row"><span>Cores disponíveis</span><strong>Preto, cinza e marrom</strong></div><div class="row"><span>Disponibilidade</span><strong>Consulte pelo WhatsApp</strong></div></div>
+<ul class="features"><li>Compartimento principal amplo.</li><li>Compartimento inferior separado para calçados.</li><li>Alça de ombro removível e ajustável.</li><li>Alças de mão reforçadas.</li><li>Apoio traseiro para encaixe em mala de viagem.</li><li>Ideal para viagens, academia, trabalho e dia a dia.</li></ul>
+<div class="actions"><a class="btn whats" href="#" id="whatsappBtn" target="_blank">COMPRAR PELO WHATSAPP</a><a class="btn insta" href="https://www.instagram.com/gattabolsas.acessorios/" rel="noopener" target="_blank">VER INSTAGRAM</a></div><div class="note">Confirme a cor disponível no momento do pedido.</div>
+</section></div></main>
+<div class="modal" id="modal" onclick="closeZoom(event)"><span class="close">×</span><img alt="" id="zoomImg" src=""/></div>
+<footer>GATTA • Bolsas e Acessórios</footer>
+<script>
+const phone="5514998378384", product="Bolsa Mala De Mão até 10kg", price="R$ 79,99";
+const msg=`Olá! Tenho interesse na ${product} (${price}). Gostaria de consultar as cores disponíveis.`;
+document.getElementById('whatsappBtn').href=`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+function showImage(src,alt){const i=document.getElementById('mainImg');i.src=src;i.alt=alt;window.scrollTo({top:0,behavior:'smooth'});}
+function openZoom(){document.getElementById('zoomImg').src=document.getElementById('mainImg').src;document.getElementById('modal').classList.add('open');}
+function closeZoom(e){if(e.target.id==='modal'||e.target.classList.contains('close'))document.getElementById('modal').classList.remove('open');}
+
+function selectColor(btn){document.querySelectorAll('.color-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.getElementById('selectedColor').textContent=btn.dataset.name;const i=document.getElementById('mainImg');i.src=btn.dataset.img;i.alt='Cor '+btn.dataset.name;}
+</script></body></html>
