@@ -8,7 +8,7 @@
 :root{--bg:#090909;--card:#141414;--gold:#b08d3b;--gold2:#dec47f;--text:#f7f2e8;--muted:#aaa}
 *{box-sizing:border-box}
 body{margin:0;min-height:100vh;background:radial-gradient(circle at top,#171717,#090909 58%);color:var(--text);font-family:Arial,sans-serif;display:flex;flex-direction:column}
-header{padding:28px 18px;text-align:center;border-bottom:1px solid #292929}
+header{padding:28px 18px;text-align:center;border-bottom:1px solid #292929;position:relative}.brand{display:inline-block}.events-btn{position:absolute;left:calc(50% + 105px);top:31px;background:#b51f2e;color:#fff;border:1px solid #d64b57;border-radius:999px;padding:7px 11px;font-size:11px;font-weight:bold;letter-spacing:.3px;text-decoration:none;box-shadow:0 3px 10px rgba(0,0,0,.28);transition:.2s}.events-btn:hover{transform:translateY(-1px);background:#c52636}
 .logo{font-family:Georgia,serif;letter-spacing:8px;font-size:38px;color:var(--gold2);font-weight:bold}
 .sub{font-size:10px;letter-spacing:3px;color:var(--gold);margin-top:6px}
 main{width:100%;max-width:900px;margin:auto;padding:42px 20px 60px}
@@ -33,11 +33,13 @@ footer{text-align:center;padding:24px;border-top:1px solid #292929;color:#777;fo
   .category{min-height:230px}
   .icon{font-size:82px;margin-bottom:17px;width:82px;height:82px}.icon svg,.icon img{width:82px;height:82px}
   .category strong{font-size:27px}
+  header{padding:22px 12px}.logo{font-size:31px;letter-spacing:6px}.events-btn{left:auto;right:10px;top:23px;padding:6px 8px;font-size:9px}
 }
+@media(max-width:390px){.events-btn{position:static;display:inline-block;margin-top:10px}.brand{display:block}}
 </style>
 </head>
 <body>
-<header><div class="logo">GATTA</div><div class="sub">BOLSAS E ACESSÓRIOS</div></header>
+<header><div class="brand"><div class="logo">GATTA</div><div class="sub">BOLSAS E ACESSÓRIOS</div></div><a class="events-btn" href="eventos.html">Sorteios &amp; Prêmios</a></header>
 <main>
 <div class="category-grid">
 <a class="category" href="promocoes.html">
