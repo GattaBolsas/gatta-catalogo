@@ -55,12 +55,16 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
 }
 
 .product-date{font-size:10px;color:#8f8f8f;margin:5px 0 8px;letter-spacing:.2px}
+
+.old-price{font-size:17px;color:#888;text-decoration:line-through;margin-right:8px}
+
+.last-units-detail{display:inline-block;background:#b08d3b;color:#0b0b0b;border:1px solid #d8bc78;border-radius:4px;padding:7px 10px;font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;margin:7px 0}
 </style>
 </head>
 <body>
 <header><div class="logo">GATTA</div><div class="sub">BOLSAS E ACESSÓRIOS</div></header>
 <main class="wrap">
-<a class="back" href="bolsas.html">← Voltar para Bolsas</a>
+<a class="back" href="promocoes.html">← Voltar para Promoções</a>
 <div class="layout">
 <section>
 <div class="main-image" onclick="openZoom()">
@@ -74,10 +78,10 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
 </div>
 </section>
 <section>
-<div class="product-code">Código: J04</div><div class="product-date">No catálogo desde 12/08/2026</div>
-<div class="badge">BOLSA SACOLA FEMININA</div>
-<h1>Bolsa Sacola Feminina de Ombro Grande Bordada e Espaçosa</h1>
-<div class="price">R$ 99,90</div>
+<div class="product-code">Código: J04</div><div class="product-date">No catálogo promoção desde 19/08/2026</div>
+<div class="badge">PROMOÇÃO • BOLSA SACOLA FEMININA</div>
+<div class="last-units-detail">ÚLTIMAS UNIDADES</div><h1>Bolsa Sacola Feminina de Ombro Grande Bordada e Espaçosa</h1>
+<div class="price"><span class="old-price">R$ 99,90</span> <span>R$ 87,90</span></div>
 <div class="payment-info">
 Preço para pagamento em dinheiro ou Pix.<br/>
 Parcelamento em até 12x no cartão de crédito — consulte as taxas pelo WhatsApp.
@@ -124,7 +128,7 @@ Bolsa sacola feminina ampla, elegante e funcional, ideal para acompanhar a rotin
 <script>
 const phone = "5514998378384";
 const product = "Bolsa Sacola Feminina de Ombro Grande Bordada e Espaçosa";
-const price = "R$ 99,90";
+const price = "R$ 87,90";
 
 function updateWhatsapp(color) {
   const msg = `Olá! Tenho interesse na ${product}, na cor ${color} (${price}).`;

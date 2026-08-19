@@ -29,12 +29,14 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
 @media(max-width:780px){.layout{grid-template-columns:1fr}.main-image{height:410px}.gallery{grid-template-columns:repeat(3,1fr)}.actions{grid-template-columns:1fr}}
 
 .product-date{font-size:10px;color:#8f8f8f;margin:5px 0 8px;letter-spacing:.2px}
+
+.old-price{font-size:17px;color:#888;text-decoration:line-through;margin-right:8px}
 </style>
 </head>
 <body>
 <header><div class="logo">GATTA</div><div class="sub">BOLSAS E ACESSÓRIOS</div></header>
 <main class="wrap">
-<a class="back" href="bolsas.html">← Voltar para Bolsas</a>
+<a class="back" href="promocoes.html">← Voltar para Promoções</a>
 <div class="layout">
 <section>
 <div class="main-image" onclick="openZoom()"><img alt="Kit Feminino Elegance 3 Peças na cor Preta" id="mainImg" src="imagens/preta.webp"/></div>
@@ -56,15 +58,15 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
 <img alt="Demonstração de uso" src="imagens/uso-produto.webp"/>
 </button><button class="thumb" onclick="showImage('imagens/foto-ambiente.webp', 'Kit em composição')">
 <img alt="Kit em composição" src="imagens/foto-ambiente.webp"/>
-</button><button class="thumb" onclick="showVideo()" aria-label="Vídeo demonstrativo">
-<video muted playsinline preload="metadata"><source src="videos/j02-demonstrativo.mp4" type="video/mp4"/></video>
+</button><button aria-label="Vídeo demonstrativo" class="thumb" onclick="showVideo()">
+<video muted="" playsinline="" preload="metadata"><source src="videos/j02-demonstrativo.mp4" type="video/mp4"/></video>
 </button>
 </div>
 </section>
 <section>
-<div class="product-code">Código: J02</div><div class="product-date">No catálogo desde 12/08/2026</div><div class="badge">KIT COM 3 PEÇAS</div>
+<div class="product-code">Código: J02</div><div class="product-date">No catálogo promoção desde 19/08/2026</div><div class="badge">PROMOÇÃO • KIT COM 3 PEÇAS</div>
 <h1>Kit Feminino Elegance 3 Peças</h1>
-<div class="price">R$ 149,90</div><div class="payment-info">Preço para pagamento em dinheiro ou Pix.<br/>Parcelamento em até 12x no cartão de crédito — consulte as taxas pelo WhatsApp.</div>
+<div class="price"><span class="old-price">R$ 149,90</span> <span>R$ 134,90</span></div><div class="payment-info">Preço para pagamento em dinheiro ou Pix.<br/>Parcelamento em até 12x no cartão de crédito — consulte as taxas pelo WhatsApp.</div>
 <p class="desc">Um kit completo que reúne estilo, organização e versatilidade para acompanhar diferentes momentos do seu dia. Composto por bolsa média, bolsa tiracolo e carteira, combina praticidade com acabamento elegante e detalhes dourados.</p>
 <div class="color-box">
 <div class="color-label">Cor selecionada: <strong id="selectedColor">Preta</strong></div>
@@ -81,7 +83,7 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
     </button><button class="color-btn" data-img="imagens/marrom-caramelo.webp" data-name="Marrom Caramelo" onclick="selectColor(this)">
 <span class="dot" style="background:#744225"></span>Marrom Caramelo
     </button></div>
-<div class="video-demo"><button class="color-btn" type="button" onclick="showVideo()">▶ Vídeo demonstrativo</button></div>
+<div class="video-demo"><button class="color-btn" onclick="showVideo()" type="button">▶ Vídeo demonstrativo</button></div>
 </div>
 <div class="details">
 <div class="row"><span>Material</span><strong>Sintético</strong></div>
@@ -109,7 +111,7 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
 <script>
 const phone = "5514998378384";
 const product = "Kit Feminino Elegance 3 Peças";
-const price = "R$ 149,90";
+const price = "R$ 134,90";
 
 function updateWhatsapp(color){
   const msg = `Olá! Tenho interesse no ${product}, na cor ${color} (${price}).`;
