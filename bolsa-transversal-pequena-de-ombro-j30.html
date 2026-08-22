@@ -81,7 +81,7 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
 </div>
 </section>
 <section>
-<div class="product-code">Código: J30</div><div class="product-date">No catálogo desde 12/08/2026</div>
+<div class="product-code">Código: BO-30</div><div class="product-date">No catálogo desde 12/08/2026</div>
 <div class="badge">PREÇO DE LANÇAMENTO • BOLSA</div>
 <h1>Bolsa Transversal Pequena De Ombro</h1>
 <div class="price">R$ 69,90</div>
@@ -119,7 +119,7 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
 <footer>GATTA • Bolsas e Acessórios</footer>
 <script>
 const phone="5514998378384", product="Bolsa Transversal Pequena De Ombro", price="R$ 69,90";
-function updateWhatsapp(color){const msg=`Olá! Tenho interesse na ${product}, código J30, na cor ${color} (${price}).`;document.getElementById('whatsappBtn').href=`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;}
+function updateWhatsapp(color){const msg=`Olá! Tenho interesse na ${product}, código BO-30, na cor ${color} (${price}).`;document.getElementById('whatsappBtn').href=`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;}
 function selectColor(btn){document.querySelectorAll('.color-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const n=btn.dataset.name,img=btn.dataset.img;document.getElementById('selectedColor').textContent=n;document.getElementById('colorDetail').textContent=n;document.getElementById('mainImg').src=img;updateWhatsapp(n);}
 function showImage(src,alt){const i=document.getElementById('mainImg');i.src=src;i.alt=alt;window.scrollTo({top:0,behavior:'smooth'});}
 function openZoom(){document.getElementById('zoomImg').src=document.getElementById('mainImg').src;document.getElementById('modal').classList.add('open');}

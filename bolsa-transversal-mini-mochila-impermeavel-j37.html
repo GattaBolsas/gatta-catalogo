@@ -20,7 +20,7 @@
 <button class="thumb" onclick="showImage('imagens/j37-rosa-claro.webp','Rosa Claro')"><img alt="Rosa Claro" src="imagens/j37-rosa-claro.webp"/></button>
 <button class="thumb" onclick="showImage('imagens/j37-pink.webp','Pink')"><img alt="Pink" src="imagens/j37-pink.webp"/></button>
 </div></section><section>
-<div class="product-code">Código: J37</div><div class="product-date">No catálogo desde 19/08/2026</div><div class="badge">NOVIDADE</div>
+<div class="product-code">Código: BO-37</div><div class="product-date">No catálogo desde 19/08/2026</div><div class="badge">NOVIDADE</div>
 <h1>Bolsa Transversal - Mini Mochila - Impermeável</h1><div class="price" id="productPrice">R$ 99,90</div>
 <div class="payment-info">Preço para pagamento em dinheiro ou Pix.<br/>Parcelamento em até 12x no cartão de crédito — consulte as taxas pelo WhatsApp.</div>
 <p class="desc">Compacta por fora e surpreendentemente espaçosa por dentro, esta bolsa transversal também pode ser usada como mini mochila. Produzida em nylon impermeável, possui vários compartimentos com zíper para manter seus itens organizados e protegidos. A alça ajustável e removível permite diferentes formas de uso, tornando o modelo prático para trabalho, faculdade, viagens e rotina.</p>
@@ -38,7 +38,7 @@
 </section></div></main><div class="modal" id="modal" onclick="closeZoom(event)"><span class="close">×</span><img alt="" id="zoomImg" src=""/></div><footer>GATTA • Bolsas e Acessórios</footer>
 <script>
 const phone="5514998378384", product="Bolsa Transversal - Mini Mochila - Impermeável", price="R$ 99,90";
-function updateWhatsapp(cor,soldout=false){const b=document.getElementById('whatsappBtn');if(soldout){b.removeAttribute('href');b.classList.add('disabled');b.textContent='COR ESGOTADA';return;}const msg=`Olá! Tenho interesse na ${product}, código J37, cor ${cor} (${price}).`;b.href=`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;b.classList.remove('disabled');b.textContent='COMPRAR PELO WHATSAPP';}
+function updateWhatsapp(cor,soldout=false){const b=document.getElementById('whatsappBtn');if(soldout){b.removeAttribute('href');b.classList.add('disabled');b.textContent='COR ESGOTADA';return;}const msg=`Olá! Tenho interesse na ${product}, código BO-37, cor ${cor} (${price}).`;b.href=`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;b.classList.remove('disabled');b.textContent='COMPRAR PELO WHATSAPP';}
 function selectColor(btn){document.querySelectorAll('.color-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const n=btn.dataset.name,img=btn.dataset.img,soldout=btn.dataset.soldout==='true';document.getElementById('selectedColor').textContent=n;document.getElementById('colorDetail').textContent=n;document.getElementById('mainImg').src=img;document.getElementById('mainImg').alt=n;document.getElementById('stockStatus').classList.toggle('show',soldout);updateWhatsapp(n,soldout);}
 function showImage(src,alt){const i=document.getElementById('mainImg');i.src=src;i.alt=alt;window.scrollTo({top:0,behavior:'smooth'});}function openZoom(){document.getElementById('zoomImg').src=document.getElementById('mainImg').src;document.getElementById('modal').classList.add('open');}function closeZoom(e){if(e.target.id==='modal'||e.target.classList.contains('close'))document.getElementById('modal').classList.remove('open');}updateWhatsapp('Verde Claro');
 </script></body></html>

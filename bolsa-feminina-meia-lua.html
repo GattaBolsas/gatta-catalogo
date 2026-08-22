@@ -30,7 +30,7 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
 <div class="gallery"><button class="thumb" onclick="showImage(document.querySelector('.color-btn.active').dataset.img,'Cor selecionada')"><img alt="Cor selecionada" id="colorThumb" src="imagens/j05-bege.webp"/></button><button class="thumb" onclick="showImage('imagens/j05-medidas.webp','Medidas e especificações')"><img alt="Medidas e especificações" src="imagens/j05-medidas.webp"/></button><button class="thumb" onclick="showImage('imagens/j05-detalhe.webp','Detalhes da bolsa')"><img alt="Detalhes da bolsa" src="imagens/j05-detalhe.webp"/></button><button class="thumb" onclick="showImage('imagens/j05-interior.webp','Interior da bolsa')"><img alt="Interior da bolsa" src="imagens/j05-interior.webp"/></button><button class="thumb" onclick="showImage('imagens/j05-ambiente.webp','Bolsa em ambiente')"><img alt="Bolsa em ambiente" src="imagens/j05-ambiente.webp"/></button><button class="thumb" onclick="showImage('imagens/j05-uso.webp','Demonstração de uso')"><img alt="Demonstração de uso" src="imagens/j05-uso.webp"/></button></div>
 </section>
 <section>
-<div class="product-code">Código: J05</div><div class="product-date">No catálogo promoção até 18/08/2026</div><div class="badge">BOLSA MEIA LUA • PROMOÇÃO</div>
+<div class="product-code">Código: BO-05</div><div class="product-date">No catálogo promoção até 18/08/2026</div><div class="badge">BOLSA MEIA LUA • PROMOÇÃO</div>
 <h1>Bolsa Feminina Meia Lua de Ombro e Mão</h1>
 <div class="promo">🔥 OFERTA ESPECIAL</div>
 <div class="price"><span class="old-price">R$ 69,90</span>R$ 54,90</div>
@@ -65,7 +65,7 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
 <footer>GATTA • Bolsas e Acessórios</footer>
 <script>
 const phone="5514998378384", product="Bolsa Feminina Meia Lua de Ombro e Mão", price="R$ 54,90";
-function updateWhatsapp(color){const msg=`Olá! Tenho interesse na ${product}, código J05, na cor ${color} (${price}).`;document.getElementById('whatsappBtn').href=`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;}
+function updateWhatsapp(color){const msg=`Olá! Tenho interesse na ${product}, código BO-05, na cor ${color} (${price}).`;document.getElementById('whatsappBtn').href=`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;}
 function selectColor(btn){document.querySelectorAll('.color-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const n=btn.dataset.name,img=btn.dataset.img;document.getElementById('selectedColor').textContent=n;document.getElementById('colorDetail').textContent=n;document.getElementById('mainImg').src=img;document.getElementById('colorThumb').src=img;updateWhatsapp(n);}
 function showImage(src,alt){const i=document.getElementById('mainImg');i.src=src;i.alt=alt;window.scrollTo({top:0,behavior:'smooth'});}
 function openZoom(){document.getElementById('zoomImg').src=document.getElementById('mainImg').src;document.getElementById('modal').classList.add('open');}
