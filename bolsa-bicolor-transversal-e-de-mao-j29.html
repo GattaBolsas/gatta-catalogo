@@ -57,6 +57,9 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
 }
 
 .product-date{font-size:10px;color:#8f8f8f;margin:5px 0 8px;letter-spacing:.2px}
+
+/* Cupom Gatta */
+.coupon-box{margin:10px 0 18px;padding:12px;border:1px solid #383838;border-radius:7px;background:#111}.coupon-row{display:flex;gap:8px;flex-wrap:wrap}.coupon-input{flex:1;min-width:160px;background:#080808;color:#f7f2e8;border:1px solid #555;border-radius:5px;padding:11px 12px;text-transform:uppercase;outline:none}.coupon-input:focus{border-color:var(--gold)}.coupon-apply{background:var(--gold);color:#111;border:0;border-radius:5px;padding:11px 16px;font-weight:bold;cursor:pointer}.coupon-msg{font-size:12px;margin-top:8px;min-height:15px;color:#aaa}.coupon-msg.ok{color:var(--gold2)}.coupon-price{font-size:20px;font-weight:bold;color:var(--gold2);margin-top:7px}.coupon-original{text-decoration:line-through;color:#888;font-size:13px;margin-right:7px}
 </style>
 </head>
 <body>
@@ -82,7 +85,7 @@ footer{text-align:center;padding:26px;border-top:1px solid #292929;color:#777}
 <div class="product-code">Código: BO-29</div><div class="product-date">No catálogo promoção até 18/08/2026</div>
 <div class="badge">PREÇO DE LANÇAMENTO • BOLSA</div>
 <h1>Bolsa Bicolor Transversal E De Mão</h1>
-<div class="price"><span class="old-price">R$ 99,90</span>R$ 79,90</div>
+<div class="price"><span class="old-price">R$ 99,90</span>R$ 79,90</div><div class="coupon-box"><div class="coupon-row"><input autocomplete="off" class="coupon-input" id="couponInput" placeholder="Digite seu cupom" type="text"/><button class="coupon-apply" onclick="applyGattaCoupon()" type="button">APLICAR</button></div><div class="coupon-msg" id="couponMsg"></div><div class="coupon-price" id="couponPrice"></div></div>
 <div class="promo">PREÇO DE LANÇAMENTO</div>
 <div class="payment-info">Preço para pagamento em dinheiro ou Pix.<br/>Parcelamento em até 12x no cartão de crédito — consulte as taxas pelo WhatsApp.</div>
 <p class="desc">Elegante e versátil, a Bolsa Bicolor Transversal E De Mão combina praticidade com um visual moderno. Pode ser usada pelas alças de mão ou com a alça transversal removível e regulável, adaptando-se facilmente a passeios, trabalho e ocasiões casuais. O acabamento matelassê, os metais dourados e o chaveiro decorativo completam o visual sofisticado.</p>
@@ -120,6 +123,99 @@ function showImage(src,alt){const i=document.getElementById('mainImg');i.src=src
 function openZoom(){document.getElementById('zoomImg').src=document.getElementById('mainImg').src;document.getElementById('modal').classList.add('open');}
 function closeZoom(e){if(e.target.id==='modal'||e.target.classList.contains('close'))document.getElementById('modal').classList.remove('open');}
 updateWhatsapp('Rosa e Preto');
+</script>
+
+<script id="gattaCouponScript">
+(function(){
+  const COUPONS = {
+    TESTE10: { discount: 0.10, expires: '2026-08-31T23:59:59-03:00' },
+    SORTEIO15: { discount: 0.15, expires: '2026-09-10T23:59:59-03:00' },
+    FER20: { discount: 0.20, expires: '2026-09-10T23:59:59-03:00' }
+  };
+  let couponApplied = false;
+  let appliedCode = '';
+  let appliedDiscount = 0;
+  let discountedPrice = '';
+  function brl(value){
+    return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+  }
+  function currentPrice(){
+    const el = document.querySelector('.price');
+    if (!el) return null;
+    const values = el.textContent.match(/R\$\s*[0-9.]+,[0-9]{2}/g) || [];
+    if (!values.length) return null;
+    const raw = values[values.length - 1].replace('R$', '').trim().replace(/\./g, '').replace(',', '.');
+    const price = parseFloat(raw);
+    return Number.isFinite(price) ? price : null;
+  }
+  function isExpired(coupon){
+    return Date.now() > new Date(coupon.expires).getTime();
+  }
+  window.applyGattaCoupon = function(){
+    const input = document.getElementById('couponInput');
+    const msg = document.getElementById('couponMsg');
+    const out = document.getElementById('couponPrice');
+    if (!input || !msg || !out) return;
+    const code = (input.value || '').trim().toUpperCase();
+    const coupon = COUPONS[code];
+    const price = currentPrice();
+    couponApplied = false;
+    appliedCode = '';
+    appliedDiscount = 0;
+    discountedPrice = '';
+    out.textContent = '';
+    if (!coupon){
+      msg.className = 'coupon-msg';
+      msg.textContent = 'Cupom inválido.';
+      return;
+    }
+    if (isExpired(coupon)){
+      msg.className = 'coupon-msg';
+      msg.textContent = 'Cupom expirado.';
+      return;
+    }
+    if (price === null){
+      msg.className = 'coupon-msg';
+      msg.textContent = 'Não foi possível aplicar o cupom.';
+      return;
+    }
+    couponApplied = true;
+    appliedCode = code;
+    appliedDiscount = coupon.discount;
+    discountedPrice = brl(Math.round(price * (1 - coupon.discount) * 100) / 100);
+    msg.className = 'coupon-msg ok';
+    msg.textContent = 'Cupom ' + code + ' aplicado: ' + Math.round(coupon.discount * 100) + '% de desconto ✓';
+    out.innerHTML = '<span class="coupon-original">' + brl(price) + '</span>' + discountedPrice;
+  };
+  const input = document.getElementById('couponInput');
+  if (input){
+    input.addEventListener('keydown', function(event){
+      if (event.key === 'Enter'){
+        event.preventDefault();
+        window.applyGattaCoupon();
+      }
+    });
+  }
+  const btn = document.getElementById('whatsappBtn');
+  if (btn){
+    btn.addEventListener('click', function(){
+      if (!couponApplied) return;
+      const coupon = COUPONS[appliedCode];
+      if (!coupon || isExpired(coupon)){
+        couponApplied = false;
+        return;
+      }
+      try {
+        const url = new URL(btn.href);
+        let text = url.searchParams.get('text') || '';
+        text += '\n\nCupom aplicado: ' + appliedCode + ' (' + Math.round(appliedDiscount * 100) + '% OFF)';
+        text += '\nValor com desconto: ' + discountedPrice;
+        url.searchParams.set('text', text);
+        btn.href = url.toString();
+      } catch (error) {}
+    }, true);
+  }
+})();
 </script>
 </body>
 </html>
