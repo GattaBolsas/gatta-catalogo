@@ -1,0 +1,13 @@
+CATÁLOGO GATTA — J04 CORRIGIDO
+
+A página do produto J04 foi refeita no mesmo padrão dos demais produtos:
+- galeria;
+- zoom;
+- seleção de cores;
+- detalhes;
+- WhatsApp;
+- Instagram;
+- frete grátis;
+- código discreto.
+
+Envie todos os arquivos e a pasta imagens para a raiz do repositório, substituindo os anteriores.
